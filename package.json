@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "docker": "docker build . -t app && docker run -d -p 8080:8080 app",
+    "docker": "./scripts/docker-build.sh && ./scripts/docker-run.sh",
     "test:e2e": "vue-cli-service test:e2e",
     "test:unit": "vue-cli-service test:unit"
   },

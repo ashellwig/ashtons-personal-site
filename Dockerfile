@@ -16,7 +16,7 @@ EXPOSE 8080
 # Make current directory the app folder
 WORKDIR /usr/src/app
 # Install static file server
-RUN npm install serve -g
+RUN npm install http-server -g
 COPY --from=build /usr/src/app/dist ./dist
 USER node
-CMD ["serve", "--single", "--port", "8080", "dist"]
+CMD ["http-server", "dist"]
