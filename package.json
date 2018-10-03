@@ -7,6 +7,7 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "docker": "./scripts/docker-build.sh && ./scripts/docker-run.sh",
+    "gh-pages": "./scripts/gh-pages.sh",
     "test:e2e": "vue-cli-service test:e2e",
     "test:unit": "vue-cli-service test:unit"
   },
