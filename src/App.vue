@@ -33,13 +33,12 @@
       <router-view/>
     </v-content>
     <v-footer :fixed="fixed" app>
-      <span>&copy; 2018</span>
+      <span>&copy; Ashton Hellwig 2018</span>
     </v-footer>
   </v-app>
 </template>
 
 <script>
-
 export default {
   name: 'App',
   data () {

@@ -18,19 +18,23 @@ export default new Router({
     }, {
       path: '/experience',
       component: Experience,
-      children: [{
-        path: 'ibm',
-        component: IBM
-      }, {
-        path: 'mgr',
-        component: MGR
-      }, {
-        path: 'apollo',
-        component: Apollo
-      }, {
-        path: 'trimble',
-        component: Trimble
-      }]
+      name: 'Experience'
+    }, {
+      path: '/experience/ibm',
+      name: 'IBM',
+      component: IBM
+    }, {
+      path: '/experience/mgr',
+      name: 'Mrs Greens Remedies',
+      component: MGR
+    }, {
+      path: '/experience/apollo',
+      name: 'Apollo DAE',
+      component: Apollo
+    }, {
+      path: '/experience/trimble',
+      name: 'Trimble',
+      component: Trimble
     }, {
       path: '/about',
       name: 'about',
