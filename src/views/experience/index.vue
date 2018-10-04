@@ -12,21 +12,27 @@
       <v-container fluid grid-list-md>
         <v-layout row wrap>
           <v-flex v-for="card in cardData" :key="card.title">
-            <v-card>
-              <div class="image flex">
-                <v-img :src="card.image" width="150px" class="text-xs-center"/>
-              </div>
-              <v-divider/>
-              <v-card-title primary-title>
-                <div>
-                  <div class="headline" v-text="card.title"></div>
-                  <div v-text="card.brief"></div>
+            <v-hover>
+              <v-card
+                slot-scope="{ hover }"
+                :class="`elevation-${hover ? 12 : 2}`"
+                class="mx-auto"
+              >
+                <div class="image flex">
+                  <v-img :src="card.image" width="150px" class="text-xs-center"/>
                 </div>
-              </v-card-title>
-              <v-card-actions>
-                <v-btn dark color="blue" :to="card.path">Details</v-btn>
-              </v-card-actions>
-            </v-card>
+                <v-divider/>
+                <v-card-title primary-title>
+                  <div>
+                    <div class="headline" v-text="card.title"></div>
+                    <div v-text="card.brief"></div>
+                  </div>
+                </v-card-title>
+                <v-card-actions>
+                  <v-btn dark color="blue" :to="card.path">Details</v-btn>
+                </v-card-actions>
+              </v-card>
+            </v-hover>
           </v-flex>
         </v-layout>
       </v-container>
