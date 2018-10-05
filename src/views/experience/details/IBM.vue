@@ -14,7 +14,7 @@
               <div class="headline">International Business Machines</div>
             </v-card-title>
           <v-card-actions style="justify-content: center">
-            <return-to-experience/>
+            <return-to-experience></return-to-experience>
           </v-card-actions>
         </v-card>
         <br>
