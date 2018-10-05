@@ -81,8 +81,7 @@
                               </v-btn>
                             </v-list-tile-action>
                             <v-list-tile-content>
-                              <v-list-tile-title v-html="project.name" />
-                              <v-divider></v-divider>
+                              <v-list-tile-title v-html="project.name"></v-list-tile-title>
                               <v-list-tile-sub-title>
                                 <strong>Role:</strong>
                                 {{ project.role }}
