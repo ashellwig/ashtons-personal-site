@@ -149,9 +149,9 @@
 
 <script>
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faGitlab } from '@fortawesome/free-brands-svg-icons'
 
-library.add(faGithub)
+library.add(faGithub, faGitlab)
 
 export default {
   data () {
@@ -172,6 +172,18 @@ export default {
         brief: 'Scaffolds a project in pure elm with material design',
         link: 'https://github.com/ashellwig/generator-elm-mdl.git',
         icon: 'fab fa-github'
+      }, {
+        name: 'LaTeX-Workshop',
+        role: 'Contributer',
+        brief: 'Suite of tools to compile latex documents within Visual Studio Code',
+        link: 'https://github.com/James-Yu/LaTeX-Workshop.git',
+        icon: 'fab fa-github'
+      }, {
+        name: 'CannExchange',
+        role: 'Creator',
+        brief: 'An asset-exchange type website dedicated to professionals in the Hemp industry',
+        link: 'https://gitlab.com/ashellwig-mgr/cannex.git',
+        icon: 'fab fa-gitlab'
       }],
       rubyProjects: [{
         name: 'jekyll',
