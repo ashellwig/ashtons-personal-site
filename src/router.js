@@ -17,19 +17,29 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: Home
+      component: Home,
+      meta: {
+        title: 'AHellwig | Home',
+        metaTags: [{
+          name: 'description',
+          content: 'The home page of Ashton Hellwig\'s personal site'
+        }, {
+          property: 'og:description',
+          content: 'The home page of Ashton Hellwig\'s personal site'
+        }]
+      }
     }, {
       path: '/experience',
       component: Experience,
       name: 'Experience',
       meta: {
-        title: 'Experience | Index',
+        title: 'AHellwig | Experience | Index',
         metaTags: [{
           name: 'description',
-          content: ''
+          content: 'Landing page for my technical experience'
         }, {
           property: 'og:description',
-          content: ''
+          content: 'Landing page for my technical experience'
         }]
       }
     }, {
@@ -37,7 +47,7 @@ export default new Router({
       name: 'IBM',
       component: IBM,
       meta: {
-        title: 'Experience | IBM',
+        title: 'AHellwig | Experience | IBM',
         metaTags: [{
           name: 'description',
           content: 'Details about my work experience with IBM'
@@ -51,7 +61,7 @@ export default new Router({
       name: 'Mrs Greens Remedies',
       component: MGR,
       meta: {
-        title: 'Experience | 421 Hemp',
+        title: 'AHellwig | Experience | 421 Hemp',
         metaTags: [{
           name: 'description',
           content: 'Details about my work experience with Mrs Greens Remedies'
@@ -65,7 +75,7 @@ export default new Router({
       name: 'Apollo DAE',
       component: Apollo,
       meta: {
-        title: 'Experience | Apollo',
+        title: 'AHellwig | Experience | Apollo',
         metaTags: [{
           name: 'description',
           content: 'Details about my work experience with Apollo DAE'
@@ -79,7 +89,7 @@ export default new Router({
       name: 'Trimble',
       component: Trimble,
       meta: {
-        title: 'Experience | Trimble',
+        title: 'AHellwig | Experience | Trimble',
         metaTags: [{
           name: 'description',
           content: 'Details about my work experience with Trimble Navigation'
@@ -91,14 +101,44 @@ export default new Router({
     }, {
       path: '/social',
       name: 'Social Networks',
-      component: Social
+      component: Social,
+      meta: {
+        title: 'AHellwig | Social Networks',
+        metaTags: [{
+          name: 'description',
+          content: 'Details about my social network profiles'
+        }, {
+          property: 'og:description',
+          content: 'Details about my social network profiles'
+        }]
+      }
     }, {
       path: '/portfolio',
       name: 'Portfolio',
-      component: Portfolio
+      component: Portfolio,
+      meta: {
+        title: 'AHellwig | Portfolio',
+        metaTags: [{
+          name: 'description',
+          content: 'Details about my favorite personal projects and contributions'
+        }, {
+          property: 'og:description',
+          content: 'Details about my favorite personal projects and contributions'
+        }]
+      }
     }, {
       path: '/about',
       name: 'about',
+      meta: {
+        title: 'AHellwig | About',
+        metaTags: [{
+          name: 'description',
+          content: 'The about page of Ashton Hellwig\'s personal site'
+        }, {
+          property: 'og:description',
+          content: 'The about page of Ashton Hellwig\'s personal site'
+        }]
+      },
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
