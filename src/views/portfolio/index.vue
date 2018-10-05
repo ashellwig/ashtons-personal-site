@@ -1,5 +1,17 @@
 <template>
   <v-container fluid>
+    <v-snackbar
+      v-model="snackbar"
+      color="info"
+      timeout="6000"
+      vertical
+      top>
+      More Projects available on
+      <router-link to="/social">
+        Github
+      </router-link>
+      <v-btn dark flat @click="snackbar = false">Close</v-btn>
+    </v-snackbar>
     <v-slide-y-transition mode="out-in">
       <v-layout column align center>
         <v-card>
@@ -155,6 +167,7 @@ library.add(faGithub, faGitlab)
 export default {
   data () {
     return {
+      snackbar: true,
       cppDialog: false,
       nodeDialog: false,
       rubyDialog: false,

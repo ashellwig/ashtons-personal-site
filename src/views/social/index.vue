@@ -55,6 +55,12 @@ export default {
         link: 'https://linkedin.com/in/ahellwig',
         image: '/images/social-logos/linkedin/for-screen/2-Color/Logo-2C-128px-R.png',
         height: '128px'
+      }, {
+        name: 'Gitlab',
+        username: 'ashellwig',
+        link: 'https://gitlab.com/in/ashellwig',
+        image: '/images/social-logos/gitlab/logo/logo-extra-whitespace.png',
+        height: '128px'
       }]
     }
   }
