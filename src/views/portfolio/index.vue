@@ -5,7 +5,7 @@
       color="info"
       :timeout="6000"
       vertical
-      top>
+      bottom>
       More Projects available on
       <router-link to="/social">
         Github
