@@ -12,6 +12,7 @@ import Portfolio from './views/portfolio/index.vue'
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
@@ -20,23 +21,73 @@ export default new Router({
     }, {
       path: '/experience',
       component: Experience,
-      name: 'Experience'
+      name: 'Experience',
+      meta: {
+        title: 'Experience | Index',
+        metaTags: [{
+          name: 'description',
+          content: ''
+        }, {
+          property: 'og:description',
+          content: ''
+        }]
+      }
     }, {
       path: '/experience/ibm',
       name: 'IBM',
-      component: IBM
+      component: IBM,
+      meta: {
+        title: 'Experience | IBM',
+        metaTags: [{
+          name: 'description',
+          content: 'Details about my work experience with IBM'
+        }, {
+          property: 'og:description',
+          content: 'Details about my work experience with IBM'
+        }]
+      }
     }, {
       path: '/experience/mgr',
       name: 'Mrs Greens Remedies',
-      component: MGR
+      component: MGR,
+      meta: {
+        title: 'Experience | 421 Hemp',
+        metaTags: [{
+          name: 'description',
+          content: 'Details about my work experience with Mrs Greens Remedies'
+        }, {
+          property: 'og:description',
+          content: 'Details about my work experience with Mrs Greens Remedies'
+        }]
+      }
     }, {
       path: '/experience/apollo',
       name: 'Apollo DAE',
-      component: Apollo
+      component: Apollo,
+      meta: {
+        title: 'Experience | Apollo',
+        metaTags: [{
+          name: 'description',
+          content: 'Details about my work experience with Apollo DAE'
+        }, {
+          property: 'og:description',
+          content: 'Details about my work experience with Apollo DAE'
+        }]
+      }
     }, {
       path: '/experience/trimble',
       name: 'Trimble',
-      component: Trimble
+      component: Trimble,
+      meta: {
+        title: 'Experience | Trimble',
+        metaTags: [{
+          name: 'description',
+          content: 'Details about my work experience with Trimble Navigation'
+        }, {
+          property: 'og:description',
+          content: 'Details about my work experience with Trimble Navigation'
+        }]
+      }
     }, {
       path: '/social',
       name: 'Social Networks',

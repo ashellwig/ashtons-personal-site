@@ -8,7 +8,7 @@ node_modules
 # config
 .env.local
 .env.*.local
-netlify.toml
+# netlify.toml
 
 # Log files
 npm-debug.log*
