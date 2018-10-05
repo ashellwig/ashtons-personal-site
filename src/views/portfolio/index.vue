@@ -15,86 +15,23 @@
       <v-container fluid grid-list-md>
         <v-layout row wrap justify-space-between>
           <v-hover>
-              <v-card
-                slot-scope="{ hover }"
-                :class="`elevation-${hover ? 12 : 2}`"
-                class="mx-auto">
-                <div class="image flex">
-                  <v-img src="images/language-logos/cpp.png" width="250px"/>
-                </div>
-                <v-card-actions>
-                  <v-dialog
-                  v-model="cppDialog"
-                  width="500">
-                    <v-btn slot="activator" color="red lighten-2">
-                      See Projects
-                    </v-btn>
-                    <v-card>
-                      <v-card-title class="headline grey lighten-2"
-                        primary-title>
-                        C++ Projects
-                      </v-card-title>
-                      <v-card-text>
-                        <div class="list flex">
-                          <v-list
-                            three-line
-                            subheader>
-                            <v-list-tile
-                              v-for="project in cppProjects"
-                              :key="project.name"
-                            >
-                              <v-list-tile-action>
-                                <v-btn icon flat :href="project.link" target="_blank">
-                                  <v-icon>
-                                    {{ project.icon }}
-                                  </v-icon>
-                                </v-btn>
-                              </v-list-tile-action>
-                              <v-list-tile-content>
-                                <v-list-tile-title v-text="project.name"/>
-                                <v-list-tile-sub-title>
-                                  <strong>Role: </strong> {{ project.role }}
-                                </v-list-tile-sub-title>
-                                <v-list-tile-sub-title v-text="project.brief"></v-list-tile-sub-title>
-                              </v-list-tile-content>
-                            </v-list-tile>
-                          </v-list>
-                        </div>
-                      </v-card-text>
-                    </v-card>
-                  </v-dialog>
-                </v-card-actions>
-              </v-card>
-          </v-hover>
-          <v-hover>
-              <v-card
-                slot-scope="{ hover }"
-                :class="`elevation-${hover ? 12 : 2}`"
-                class="mx-auto">
+            <v-card slot-scope="{ hover }" :class="`elevation-${hover ? 12 : 2}`" class="mx-auto">
               <div class="image flex">
-                <v-img src="images/language-logos/nodejs-new-pantone-black.png" width="250px"/>
+                <v-img src="images/language-logos/cpp.png" width="250px" />
               </div>
               <v-card-actions>
-                <v-dialog
-                v-model="nodeDialog"
-                width="500">
+                <v-dialog v-model="cppDialog" width="500">
                   <v-btn slot="activator" color="red lighten-2">
                     See Projects
                   </v-btn>
                   <v-card>
-                    <v-card-title class="headline grey lighten-2"
-                      primary-title>
-                      Node.js Projects
+                    <v-card-title class="headline grey lighten-2" primary-title>
+                      C++ Projects
                     </v-card-title>
                     <v-card-text>
                       <div class="list flex">
-                        <v-list
-                          three-line
-                          subheader>
-                          <v-list-tile
-                            v-for="project in nodeProjects"
-                            :key="project.name"
-                          >
+                        <v-list three-line subheader>
+                          <v-list-tile v-for="project in cppProjects" :key="project.name">
                             <v-list-tile-action>
                               <v-btn icon flat :href="project.link" target="_blank">
                                 <v-icon>
@@ -103,7 +40,48 @@
                               </v-btn>
                             </v-list-tile-action>
                             <v-list-tile-content>
-                              <v-list-tile-title v-html="project.name"/>
+                              <v-list-tile-title v-text="project.name" />
+                              <v-list-tile-sub-title>
+                                <strong>Role: </strong> {{ project.role }}
+                              </v-list-tile-sub-title>
+                              <v-list-tile-sub-title v-text="project.brief"></v-list-tile-sub-title>
+                            </v-list-tile-content>
+                          </v-list-tile>
+                        </v-list>
+                      </div>
+                    </v-card-text>
+                  </v-card>
+                </v-dialog>
+              </v-card-actions>
+            </v-card>
+          </v-hover>
+          <v-hover>
+            <v-card slot-scope="{ hover }" :class="`elevation-${hover ? 12 : 2}`" class="mx-auto">
+              <div class="image flex">
+                <v-img src="images/language-logos/nodejs-new-pantone-black.png" width="250px" />
+              </div>
+              <v-card-actions>
+                <v-dialog v-model="nodeDialog" width="500">
+                  <v-btn slot="activator" color="red lighten-2">
+                    See Projects
+                  </v-btn>
+                  <v-card>
+                    <v-card-title class="headline grey lighten-2" primary-title>
+                      Node.js Projects
+                    </v-card-title>
+                    <v-card-text>
+                      <div class="list flex">
+                        <v-list three-line subheader>
+                          <v-list-tile v-for="project in nodeProjects" :key="project.name">
+                            <v-list-tile-action>
+                              <v-btn icon flat :href="project.link" target="_blank">
+                                <v-icon>
+                                  {{ project.icon }}
+                                </v-icon>
+                              </v-btn>
+                            </v-list-tile-action>
+                            <v-list-tile-content>
+                              <v-list-tile-title v-html="project.name" />
                               <v-divider></v-divider>
                               <v-list-tile-sub-title>
                                 <strong>Role:</strong>
@@ -121,34 +99,23 @@
             </v-card>
           </v-hover>
           <v-hover>
-              <v-card
-                slot-scope="{ hover }"
-                :class="`elevation-${hover ? 12 : 2}`"
-                class="mx-auto">
+            <v-card slot-scope="{ hover }" :class="`elevation-${hover ? 12 : 2}`" class="mx-auto">
               <div class="image flex">
-                <v-img src="images/language-logos/ruby-logo/ruby-logo-R.png" width="250px"/>
+                <v-img src="images/language-logos/ruby-logo/ruby-logo-R.png" width="250px" />
               </div>
               <v-card-actions>
-                <v-dialog
-                v-model="rubyDialog"
-                width="500">
+                <v-dialog v-model="rubyDialog" width="500">
                   <v-btn slot="activator" color="red lighten-2">
                     See Projects
                   </v-btn>
                   <v-card>
-                    <v-card-title class="headline grey lighten-2"
-                      primary-title>
+                    <v-card-title class="headline grey lighten-2" primary-title>
                       Ruby Projects
                     </v-card-title>
                     <v-card-text>
                       <div class="list flex">
-                        <v-list
-                          three-line
-                          subheader>
-                          <v-list-tile
-                            v-for="project in rubyProjects"
-                            :key="project.name"
-                          >
+                        <v-list three-line subheader>
+                          <v-list-tile v-for="project in rubyProjects" :key="project.name">
                             <v-list-tile-action>
                               <v-btn icon flat :href="project.link" target="_blank">
                                 <v-icon>
@@ -157,7 +124,7 @@
                               </v-btn>
                             </v-list-tile-action>
                             <v-list-tile-content>
-                              <v-list-tile-title v-html="project.name"/>
+                              <v-list-tile-title v-html="project.name" />
                               <v-divider></v-divider>
                               <v-list-tile-sub-title>
                                 <strong>Role:</strong>
