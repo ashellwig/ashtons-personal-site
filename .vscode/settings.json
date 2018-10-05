@@ -1,0 +1,17 @@
+{
+	"eslint.options": {
+		"configFile": ".eslintrc.js",
+  },
+	"eslint.autoFixOnSave": true,
+	"eslint.packageManager": "yarn",
+	"eslint.validate": [
+		"javascript",
+		"javascriptreact",
+		"vue"
+	],
+	"npm.packageManager": "yarn",
+	"npm-intellisense.importES6": true,
+	"npm-intellisense.packageSubfoldersIntellisense": true,
+	"npm-intellisense.importQuotes": "'",
+	"npm-intellisense.scanDevDependencies": true
+}
