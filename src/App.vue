@@ -53,6 +53,14 @@ export default {
         icon: 'fas fa-briefcase',
         title: 'Work Experience',
         path: '/experience'
+      }, {
+        icon: 'fas fa-share',
+        title: 'Social Networks',
+        path: '/social'
+      }, {
+        icon: 'fas fa-file',
+        title: 'Portfolio',
+        path: '/portfolio'
       }],
       title: 'Ashton Hellwig\'s Personal Site'
     }

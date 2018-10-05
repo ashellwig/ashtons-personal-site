@@ -6,6 +6,8 @@ import IBM from './views/experience/details/IBM.vue'
 import MGR from './views/experience/details/MGR.vue'
 import Trimble from './views/experience/details/Trimble.vue'
 import Apollo from './views/experience/details/Apollo.vue'
+import Social from './views/social/index.vue'
+import Portfolio from './views/portfolio/index.vue'
 
 Vue.use(Router)
 
@@ -35,6 +37,14 @@ export default new Router({
       path: '/experience/trimble',
       name: 'Trimble',
       component: Trimble
+    }, {
+      path: '/social',
+      name: 'Social Networks',
+      component: Social
+    }, {
+      path: '/portfolio',
+      name: 'Portfolio',
+      component: Portfolio
     }, {
       path: '/about',
       name: 'about',
