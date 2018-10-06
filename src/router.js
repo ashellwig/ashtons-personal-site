@@ -8,6 +8,9 @@ import Trimble from './views/experience/details/Trimble.vue'
 import Apollo from './views/experience/details/Apollo.vue'
 import Social from './views/social/index.vue'
 import Portfolio from './views/portfolio/index.vue'
+import FedexGround from './views/experience/details/FedexGround.vue'
+import RexelHoldings from './views/experience/details/RexelHoldings.vue'
+import Walmart from './views/experience/details/Walmart.vue'
 
 Vue.use(Router)
 
@@ -33,7 +36,7 @@ export default new Router({
       component: Experience,
       name: 'Experience',
       meta: {
-        title: 'AHellwig | Experience | Index',
+        title: 'AHellwig | Experience',
         metaTags: [{
           name: 'description',
           content: 'Landing page for my technical experience'
@@ -96,6 +99,48 @@ export default new Router({
         }, {
           property: 'og:description',
           content: 'Details about my work experience with Trimble Navigation'
+        }]
+      }
+    }, {
+      path: '/experience/fedex',
+      name: 'Fedex',
+      component: FedexGround,
+      meta: {
+        title: 'AHellwig | Experience | Fedex',
+        metaTags: [{
+          name: 'description',
+          content: 'Details about my experience with FedEx Ground'
+        }, {
+          property: 'og:description',
+          content: 'Details about my experience with FedEx Ground'
+        }]
+      }
+    }, {
+      path: '/experience/walmart',
+      name: 'Walmart',
+      component: Walmart,
+      meta: {
+        title: 'AHellwig | Experience | Walmart',
+        metaTags: [{
+          name: 'description',
+          content: 'Details about my experience with Walmart Stores'
+        }, {
+          property: 'og:description',
+          content: 'Details about my experience with Walmart Stores'
+        }]
+      }
+    }, {
+      path: '/experience/rexel',
+      name: 'Rexel',
+      component: RexelHoldings,
+      meta: {
+        title: 'AHellwig | Experience | Rexel Holdings',
+        metaTags: [{
+          name: 'description',
+          content: 'Details about my experience with Rexel Holdings USA'
+        }, {
+          property: 'og:description',
+          content: 'Details about my experience with Rexel Holdings USA'
         }]
       }
     }, {
