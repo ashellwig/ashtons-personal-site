@@ -9,7 +9,6 @@
     </div>
     <div class="text-xs-center">
       <h4>Detailed Achievements</h4>
-      <br>
       <v-layout fluid grid-list-md>
         <v-flex v-for="achievement in achievements" :key="achievement.content">
           <v-card>
@@ -37,8 +36,9 @@ export default {
         start: 'May 2016',
         end: 'October 2016',
         fullDescription: `
-          Use a Raymond Corp Order Picker Truck (5200-5600) to palletize or bin
-          orders for independant electrical or construction contractors.
+          Unload trucks and process freight as well as store and manage
+          warehouse and process high value items and stock grocery section of
+          the retail sales floor.
           `
       }],
       achievements: [{

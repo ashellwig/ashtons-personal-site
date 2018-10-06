@@ -14,12 +14,14 @@ export const WorkExperienceShort = Vue.component('WorkExperienceShort', {
         <v-slide-y-transition mode="out-in">
           <v-layout column align-center>
             <v-card>
-              <v-img
-                contain
-                height="150px"
-                style="justify-content: center;"
-                :src="details.image"
-              ></v-img>
+              <div class="pa-1">
+                <v-img
+                  contain
+                  height="150px"
+                  style="justify-content: center;"
+                  :src="details.image"
+                ></v-img>
+              </div>
               <v-card-title primary-title>
                 <div class="headline">{{ details.company }}</div>
               </v-card-title>

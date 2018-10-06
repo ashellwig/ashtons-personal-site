@@ -4,7 +4,7 @@
       persistent
       v-model="drawer"
       enable-resize-watcher
-      fixed
+      :fixed="$vuetify.breakpoint.mdAndUp"
       app
     >
       <v-list>
@@ -32,7 +32,7 @@
     <v-content>
       <router-view/>
     </v-content>
-    <v-footer :fixed="fixed" app>
+    <v-footer fixed app>
       <span>&copy; Ashton Hellwig 2018</span>
     </v-footer>
   </v-app>
@@ -44,7 +44,6 @@ export default {
   data () {
     return {
       drawer: true,
-      fixed: false,
       items: [{
         icon: 'fas fa-home',
         title: 'Home',

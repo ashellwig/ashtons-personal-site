@@ -87,6 +87,9 @@
               <v-card-title primary-title>
                 <div class="headline">Education Details</div>
               </v-card-title>
+              <v-card-actions style="justify-content: center;">
+                <v-btn disabled to="/experience/education">Details</v-btn>
+              </v-card-actions>
             </v-card>
           </v-layout>
         </v-slide-y-transition>
@@ -142,6 +145,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.v-card__actions {
+  justify-content: center;
+}
 .image.flex {
   display: flex;
   justify-content: center;
