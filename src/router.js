@@ -11,6 +11,7 @@ import Portfolio from './views/portfolio/index.vue'
 import FedexGround from './views/experience/details/FedexGround.vue'
 import RexelHoldings from './views/experience/details/RexelHoldings.vue'
 import Walmart from './views/experience/details/Walmart.vue'
+import Education from './views/experience/details/Education.vue'
 
 Vue.use(Router)
 
@@ -141,6 +142,20 @@ export default new Router({
         }, {
           property: 'og:description',
           content: 'Details about my experience with Rexel Holdings USA'
+        }]
+      }
+    }, {
+      path: '/experience/education',
+      name: 'Education',
+      component: Education,
+      meta: {
+        title: 'AHellwig | Education',
+        metaTags: [{
+          name: 'description',
+          content: 'Details about my education'
+        }, {
+          property: 'og:description',
+          content: 'Details about my education'
         }]
       }
     }, {

@@ -12,7 +12,7 @@
         <div class="image flex">
           <v-img
             style="justify-content: center"
-            width="450px"
+            :height="imageHeight"
             src="/images/dogtraining.jpg"
           />
         </div>
@@ -21,6 +21,22 @@
     </v-slide-y-transition>
   </v-container>
 </template>
+
+<script>
+export default {
+  computed: {
+    imageHeight () {
+      switch (this.$vuetify.breakpoint.name) {
+        case 'xs': return '150px'
+        case 'sm': return '250px'
+        case 'md': return '450px'
+        case 'lg': return '450px'
+        case 'xl': return '450px'
+      }
+    }
+  }
+}
+</script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>

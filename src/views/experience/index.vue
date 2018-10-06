@@ -88,7 +88,7 @@
                 <div class="headline">Education Details</div>
               </v-card-title>
               <v-card-actions style="justify-content: center;">
-                <v-btn disabled to="/experience/education">Details</v-btn>
+                <v-btn dark color="blue" to="/experience/education">Details</v-btn>
               </v-card-actions>
             </v-card>
           </v-layout>
