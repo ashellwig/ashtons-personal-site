@@ -15,13 +15,15 @@ export const WorkExperienceShort = Vue.component('WorkExperienceShort', {
           <v-layout column align-center>
             <v-card>
               <v-img
+                contain
+                height="150px"
                 style="justify-content: center;"
                 :src="details.image"
               ></v-img>
               <v-card-title primary-title>
                 <div class="headline">{{ details.company }}</div>
               </v-card-title>
-              <v-card-actions>
+              <v-card-actions style="justify-content: center;">
                 <return-to-experience></return-to-experience>
               </v-card-actions>
             </v-card>
@@ -32,8 +34,8 @@ export const WorkExperienceShort = Vue.component('WorkExperienceShort', {
               <h3>Description</h3>
               <p>{{ details.fullDescription }}</p>
             </div>
-          </v-slide-y-transition>
-        </v-layout column>
+          </v-layout>
+        </v-slide-y-transition>
       </div>
     </v-container>
     `

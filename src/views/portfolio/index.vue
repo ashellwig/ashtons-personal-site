@@ -13,7 +13,7 @@
       <v-btn dark flat @click="snackbar = false">Close</v-btn>
     </v-snackbar>
     <v-slide-y-transition mode="out-in">
-      <v-layout column align center>
+      <v-layout column align-center>
         <v-card>
           <v-card-title>
             <div class="headline">

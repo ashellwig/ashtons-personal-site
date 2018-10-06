@@ -25,7 +25,11 @@ export default {
         jobTitle: 'Package Handler',
         start: 'March 2017',
         end: 'May 2017',
-        fullDescription: 'Temporary M-F Daytime Sort shift (1:00pm-finish). Load and unload trailers and sort packages for delivery. Hazard Communications Standard trained and certified.'
+        fullDescription: `
+          Temporary M-F Daytime Sort shift (1:00pm-finish). Load and unload
+          trailers and sort packages for delivery. Hazard Communications
+          Standard trained and certified.
+          `
       }]
     }
   }
